@@ -5,11 +5,12 @@
 (def wiki "http://en.wikipedia.org/w/api.php")
 
 (defn test []
-  (client/get "http://en.wikipedia.org/w/api.php"
-              {:query-params {:action "query"
-                              :list "search"
-                              :srsearch "Craig"
-                              :format "json"}}))
+  (println 
+   (client/get "http://en.wikipedia.org/w/api.php"
+               {:query-params {:action "query"
+                               :list "search"
+                               :srsearch "Dwarf_Fortress"
+                               :format "json"}})))
 
 ;; (client/request)
 
