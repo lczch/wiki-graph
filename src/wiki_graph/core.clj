@@ -6,8 +6,10 @@
 
 (defn test []
   (client/get "http://en.wikipedia.org/w/api.php"
-              {:query-params {:action "query" :list "search" :srsearch "Craig" :format "json"}
-               :debug true}))
+              {:query-params {:action "query"
+                              :list "search"
+                              :srsearch "Craig"
+                              :format "json"}}))
 
 ;; (client/request)
 
@@ -22,6 +24,6 @@
 
 (defn -main []
   (test)
-                                        ;(.start server)
+  ;;(.start server)
   )
 
