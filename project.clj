@@ -5,6 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [ring "1.8.2"]
+                 [clj-http "2.3.0"]
                  ]
   :main ^:skip-aot wiki-graph.core
   :target-path "target/%s"
